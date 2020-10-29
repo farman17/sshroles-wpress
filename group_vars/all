@@ -5,7 +5,7 @@ main_domain: sosialmedia.dailybugis.my.id
 email_letsencrypt: ahmadfarman1701@gmail.com
 
 # WordPress database settings, change with correct value
-wp_db_name: wordpress 
+wp_db_name: testing 
 wp_db_user: admin
 wp_db_password: farman17 
 wp_db_hostname: dbsosmed.cjorhe5jzkni.us-east-2.rds.amazonaws.com

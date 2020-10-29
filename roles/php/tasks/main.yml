@@ -12,6 +12,9 @@
     - php7.2-curl
     - php-zip
     - mysql-client-core-5.7
+    - libc6
+    - python
+    - python-mysqldb 
     update_cache: yes
 
 - name: restart php
