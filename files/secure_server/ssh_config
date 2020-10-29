@@ -1,0 +1,4 @@
+Host wordpress.dailybugis.my.id
+ HostName wordpress.dailybugis.my.id
+ PreferredAuthentications publickey
+ IdentityFile ~/.ssh/deploy

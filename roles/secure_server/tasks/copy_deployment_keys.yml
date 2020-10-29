@@ -1,0 +1,11 @@
+- name: Copy deployment private key
+  copy:
+    src: ../../../files/keys/id_rsa
+    dest: /home/deploy/.ssh/id_rsa
+    mode: 0600
+
+- name: Copy deployment public key
+  copy:
+    src: ../../../files/keys/id_rsa.pub
+    dest: /home/deploy/.ssh/id_rsa.pub
+    mode: 0644

@@ -1,0 +1,27 @@
+- hosts: webservers
+  become: true
+  gather_facts: true
+
+  roles:
+    - role: nginx
+    - role: php
+
+
+
+    - role: secure_server
+      vars:
+        hashed_deploy_user_password: $6$8alcM6/bp86XtR$fui1ie6z9E83oi/HxYd$
+        login_ssh_public_key_filename: id_rsa.pub
+        has_deployment_keys: true
+        has_ssh_config: true
+
+
+    - role: letsencrypt
+      vars:
+       letsencrypt_email: "{{ email_letsencrypt }}"
+       main_domain_name: "{{ main_domain }}"
+
+       all_domain_names:
+           - "{{ main_domain }}"
+
+       deploy_sample_html: true
