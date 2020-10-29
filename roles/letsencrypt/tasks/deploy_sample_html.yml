@@ -19,7 +19,7 @@
     dest: /var/www/{{ main_domain_name }}/{{ folder_web }}/
   
 
-- name: Run SQL commands against DB to create table
+- name: Run SQL commands to create database {{ wp_db_name }}
   mysql_db:
         login_host: "{{ wp_db_hostname }}"
         login_password: "{{ wp_db_password }}"
