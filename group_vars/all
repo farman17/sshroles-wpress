@@ -5,7 +5,7 @@ main_domain: sosialmedia.dailybugis.my.id
 email_letsencrypt: ahmadfarman1701@gmail.com
 
 # WordPress database settings, change with correct value
-wp_db_name: db_mediart 
+wp_db_name: db_sosmedia 
 wp_db_user: admin
 wp_db_password: farman17 
 wp_db_hostname: dbsosmed.cjorhe5jzkni.us-east-2.rds.amazonaws.com
@@ -15,4 +15,4 @@ wp_db_hostname: dbsosmed.cjorhe5jzkni.us-east-2.rds.amazonaws.com
 github_repo: https://github.com/WordPress/WordPress.git
 
 #Folder for Deploy Website
-folder_web: wpress
+folder_web: wprees-media
